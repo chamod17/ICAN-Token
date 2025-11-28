@@ -74,7 +74,7 @@ Your staking amount determines your **VIP tier** and **exchange fee discount**.
 | Level 1 | 1,000,000 ICAN | 10% |
 | Level 2 | 5,000,000 ICAN | 25% |
 | Level 3 | 10,000,000 ICAN | 40% |
-| Level 4 | 50,000,000 ICAN | 60% |
+| Level 4 | 50,000,000 ICAN | 50% |
 
 ---
 
@@ -84,7 +84,7 @@ Your staking amount determines your **VIP tier** and **exchange fee discount**.
 
 **Functions**
 ```solidity
-buyback(uint256 amount)
+buybackAndBurn(uint256 amount)
 burn(uint256 amount)
 pause()
 unpause()

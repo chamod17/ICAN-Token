@@ -755,6 +755,7 @@ contract ICAN is
     ) external onlyOwner {
         require(tokenAddress != address(this), "Cannot recover ICX");
         require(tokenAddress != address(0), "Invalid token address");
+        require(tokenAmount > 0, "Invalid amount");
 
         IERC20(tokenAddress).safeTransfer(owner(), tokenAmount);
     }
